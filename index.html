@@ -8,16 +8,36 @@
     
 </head>
 <body>
-    <div class="navbar">
-        <img class="apple-logo" src="./assets/apple.png" alt="apple-logo"/>
-        <ul class="navbar-list">
-            <li class="navbar-list-elem">Store</li>
+    <div class="navbar" id="navbar-Id">
+        <img class="apple-logo"  src="./assets/apple.png" alt="apple-logo"/>
+        <ul class="navbar-list" >
+            <li onclick="storeClick()" class="navbar-list-elem">Store</li>
             <li class="navbar-list-elem">iMac</li>
             <li class="navbar-list-elem">iPhone</li>
             <li class="navbar-list-elem">iPad</li>
         </ul>
     </div>
 
-    <script src="./index.js"></script>
+    <div class="main1" align="center"> Login </div>
+    <div class="main" id="main-Id">
+        <input type="email" id="emailField" placeholder="Enter Email" required/>
+        <input type="password" id="passwordField" placeholder="Enter Password" required/>
+        <button id="submit" onclick="submitForm()">Submit</button>
+    </div>
+
+    <div class="tables">
+        <table  border="2">
+            <thead>
+                <th>Username</th>
+                <th>Password</th>
+            </thead>
+            <tbody>
+                <td>admin@123.com</td>
+                <td>123</td>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./index.js"></script> 
 </body>
 </html>
