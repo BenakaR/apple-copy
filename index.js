@@ -16,3 +16,29 @@ function submitForm(){
         alert("Admin logged in.")
     }
 }
+function calcc(){
+    num1 = parseInt(document.getElementById("num1").value);
+    num2 = parseInt(document.getElementById("num2").value);
+    operation = document.getElementById("options").value;
+
+    var result = 0;
+    switch (operation){
+        case 'add':
+            result = num1 + num2;
+            console.log("Result of Addition is ",result);
+            break;
+        case 'sub':
+            result = num1 - num2;
+            console.log("Result of Subtraction is ",result);
+            break;
+        case 'mul':
+            result = num1 * num2;
+            console.log("Result of Multiplication is ",result);
+            break;
+        case 'div':
+            result = num1 / num2;
+            console.log("Result of Division is ",result);
+            break;
+    }
+    document.getElementById("mainResult").innerHTML = result;
+}
