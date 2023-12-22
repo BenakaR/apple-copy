@@ -12,6 +12,19 @@ function submitForm(){
     passwordVal = document.getElementById("passwordField").value;
     console.log("Pass",passwordVal);
 
+    var table = document.getElementById("dataTable");
+    var tableBody = document.getElementById("dataBody");
+
+    var row = tableBody.insertRow();
+    var col1 = row.insertCell(0);
+    var col2 = row.insertCell(1);
+
+    col1.innerHTML = emailVal;
+    col2.innerHTML = passwordVal;
+
+    document.getElementById("emailField").value = "";
+    document.getElementById("passwordField").value = "";
+
     if(emailVal==="admin@123.com" && passwordVal==="123"){
         alert("Admin logged in.")
     }
@@ -41,4 +54,29 @@ function calcc(){
             break;
     }
     document.getElementById("mainResult").innerHTML = result;
+}
+
+function calcFact(){
+    var num = parseInt(document.getElementById("factNum").value);
+    var start = new Date().getTime();
+    console.log("start: ",start);
+    var result = 1;
+    for(let i=1;i <= num;i++){
+        result = result * i;
+    }
+    var end = new Date().getTime();
+    console.log("End: ",end);
+
+    var table = document.getElementById("dataTableFact");
+    var tableBody = document.getElementById("dataBodyFact");
+
+    var row = tableBody.insertRow();
+    var col1 = row.insertCell(0);
+    var col2 = row.insertCell(1);
+
+    col1.innerHTML = num;
+    col2.innerHTML = result;
+
+    document.getElementById("resultFact").innerHTML = "Result = " + result;
+    console.log("Factorial calculated for ",num," is ",result);
 }

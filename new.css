@@ -4,32 +4,33 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-.navbar{
+.navbars{
     background-color: black;
     padding: 0;
     display: flex;
     height: 8vh;
-    justify-content: flex-start;
+    align-items: center;
     min-height: 20px;
 }
 .apple-logo{
     height: 6vh;
     margin: 1vh;
 }
-.navbar-list{
+.navbar-listss{
     width: 100%;
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.navbar-list-elem{
+.navbar-list-elemss{
     cursor: pointer;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight:400;
     font-size: 3vh;
     border: 1;
+    margin: 10vh;
 }
 .main{
     background-color: aqua;

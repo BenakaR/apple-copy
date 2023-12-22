@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h6> Item Management System</h6>
+    <div>
+        <input type="text" id="item" placeholder="Enter an item">
+        <button onclick="submitItem()">Submit</button>
+    </div>
+
+    <div class="tables">
+        <table class="border" id="dataTableEntry">
+            <thead>
+                <th>Sl.No.</th>
+                <th>Item</th>
+                <th>Action</th>
+            </thead>
+            <tbody class="border" id="dataBodyEntry">
+
+            </tbody>
+        </table>
+    </div>
+    <div style="display: flex;"> <i>item count : </i>
+    <div id="count"></div>
+    </div>
+    <script src="./new.js"></script>
+</body>
+</html>
